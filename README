@@ -1,0 +1,19 @@
+Created by Dana Cohen 30/01/18
+
+Usage: ./runner.sh --flag1 --flag2 --flag3
+Flags are optional.
+
+Options:
+ --debug - Debug mode, show each instruction executed by the script.
+ --sys-trace - For each failed execution, create a log for each of
+ the following values, measured during command execution:
+      processes/threads and CPU usage of the command
+      network card package counters
+ --net-trace - For each failed execution, create a ‘pcap’ file with
+ the network traffic during the execution.
+
+*You may use the flags in what order you like.
+
+*When executing the script it will wait for your command.
+ After entering the command press enter ant wait for the script to finish.
+*If interrupted, the script will print the most recent exit code.
